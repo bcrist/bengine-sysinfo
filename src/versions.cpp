@@ -4,7 +4,7 @@
 #include <boost/version.hpp>
 #include <boost/config.hpp>
 #include <glm/glm.hpp>
-#include <zlib.h>
+#include <zlib/zlib.h>
 #include <lua/lua.h>
 
 using namespace be;

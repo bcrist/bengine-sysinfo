@@ -104,7 +104,7 @@ std::vector<ModeInfo> get_modes(GLFWmonitor* monitor, RefreshRateCon& all_refres
 void log_monitor_info(GLFWmonitor* monitor, int index) {
    glm::ivec2 pos;
    glfwGetMonitorPos(monitor, &pos.x, &pos.y);
-   
+
    glm::ivec2 dim;
    glfwGetMonitorPhysicalSize(monitor, &dim.x, &dim.y);
 

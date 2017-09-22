@@ -3,10 +3,10 @@ tool 'sysinfo' {
       icon 'icon/bengine-warm.ico',
       link_project {
          'core',
-         'core-id',
+         'core-id-with-names',
          'util',
+         'util-string',
          'platform',
-         'glfw'
       }
    }
 }

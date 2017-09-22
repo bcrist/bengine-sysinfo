@@ -45,11 +45,17 @@
     <ClCompile>
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>core-debug.lib;zlib-static-debug.lib;core-id-with-names-debug.lib;util-debug.lib;util-string-debug.lib;platform-debug.lib;glfw-debug.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
     <ClCompile>
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>core.lib;zlib-static.lib;core-id-with-names.lib;util.lib;util-string.lib;platform.lib;glfw.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\memory_status.cpp" />

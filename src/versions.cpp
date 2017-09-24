@@ -39,6 +39,6 @@ void log_versions() {
       & attr("GLM") << GLM_VERSION_MAJOR << '.' << GLM_VERSION_MINOR << '.' << GLM_VERSION_PATCH << '.' << GLM_VERSION_REVISION
       & attr("zlib") << ZLIB_VERSION
       & attr("SQLite") << SQLITE_VERSION
-      & attr("Lua") << LUA_RELEASE
+      & attr("Lua") << LUA_VERSION_MAJOR "." LUA_VERSION_MINOR "." LUA_VERSION_RELEASE
       | default_log();
 }

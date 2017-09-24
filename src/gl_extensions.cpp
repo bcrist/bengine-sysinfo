@@ -37,8 +37,8 @@ void log_gl_extensions() {
 
       std::vector<S> extensions;
       if (major >= 3) {
-         GLint n_extensions;
-         glGetIntegerv(GL_EXTENSIONS, &n_extensions);
+         GLint n_extensions = 0;
+         glGetIntegerv(GL_NUM_EXTENSIONS, &n_extensions);
 
          for (GLint i = 0; i < n_extensions; ++i) {
             auto ext = static_cast<const char*>(static_cast<const void*>(glGetStringi(GL_EXTENSIONS, i)));

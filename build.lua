@@ -7,6 +7,7 @@ tool 'sysinfo' {
          'util',
          'util-string',
          'platform',
+         'gfx',
       }
    }
 }

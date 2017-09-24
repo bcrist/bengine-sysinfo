@@ -1,7 +1,7 @@
 #include "versions.hpp"
 #include "memory_status.hpp"
 #include "monitor_info.hpp"
-
+#include "gl_extensions.hpp"
 #include <be/core/lifecycle.hpp>
 #include <be/core/logging.hpp>
 #include <be/platform/lifecycle.hpp>
@@ -18,6 +18,7 @@ int main(int argc, char** argv) {
    log_versions();
    log_memory_status();
    log_all_monitor_info();
+   log_gl_extensions();
 
    log_memory_status();
 

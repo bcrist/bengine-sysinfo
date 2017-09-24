@@ -46,7 +46,7 @@
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>core-debug.lib;zlib-static-debug.lib;core-id-with-names-debug.lib;util-debug.lib;util-string-debug.lib;platform-debug.lib;glfw-debug.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>core-debug.lib;zlib-static-debug.lib;core-id-with-names-debug.lib;util-debug.lib;util-string-debug.lib;platform-debug.lib;glfw-debug.lib;gfx-debug.lib;gfx-tex-debug.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
@@ -54,16 +54,18 @@
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>core.lib;zlib-static.lib;core-id-with-names.lib;util.lib;util-string.lib;platform.lib;glfw.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>core.lib;zlib-static.lib;core-id-with-names.lib;util.lib;util-string.lib;platform.lib;glfw.lib;gfx.lib;gfx-tex.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\gl_extensions.cpp" />
     <ClCompile Include="src\memory_status.cpp" />
     <ClCompile Include="src\sysinfo.cpp" />
     <ClCompile Include="src\monitor_info.cpp" />
     <ClCompile Include="src\versions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\gl_extensions.hpp" />
     <ClInclude Include="include\memory_status.hpp" />
     <ClInclude Include="include\monitor_info.hpp" />
     <ClInclude Include="include\version.hpp" />

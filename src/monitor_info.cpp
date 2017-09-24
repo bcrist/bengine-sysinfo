@@ -12,9 +12,7 @@ void log_all_monitor_info() {
    int monitor_count;
    GLFWmonitor** monitors =  glfwGetMonitors(&monitor_count);
 
-   be_short_info() << "$(MonitorCount) Monitors Detected."
-      & hidden("MonitorCount") << monitor_count
-      | default_log();
+   be_short_info() << monitor_count << " Monitors Detected." | default_log();
 
    for (int i = 0; i < monitor_count; ++i) {
       GLFWmonitor* monitor = monitors[i];

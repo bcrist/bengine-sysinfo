@@ -46,7 +46,7 @@
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>core-debug.lib;zlib-static-debug.lib;core-id-with-names-debug.lib;util-debug.lib;util-string-debug.lib;platform-debug.lib;glfw-debug.lib;gfx-debug.lib;gfx-tex-debug.lib;Dbghelp.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>core-debug.lib;zlib-static-debug.lib;core-id-with-names-debug.lib;util-debug.lib;util-string-debug.lib;platform-debug.lib;glfw-debug.lib;gfx-debug.lib;gfx-tex-debug.lib;util-compression-debug.lib;util-fs-debug.lib;util-prng-debug.lib;Dbghelp.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
@@ -54,7 +54,7 @@
       <PreprocessorDefinitions>BE_ID_NAMES_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>core.lib;zlib-static.lib;core-id-with-names.lib;util.lib;util-string.lib;platform.lib;glfw.lib;gfx.lib;gfx-tex.lib;Dbghelp.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>core.lib;zlib-static.lib;core-id-with-names.lib;util.lib;util-string.lib;platform.lib;glfw.lib;gfx.lib;gfx-tex.lib;util-compression.lib;util-fs.lib;util-prng.lib;Dbghelp.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 
    be::CoreInitLifecycle init;
    be::default_log().verbosity_mask(be::v::verbose_or_worse);
-   be::PlatformLifecycle platform;
+   be::platform::PlatformLifecycle platform;
    be::CoreLifecycle core;
 
    log_versions();

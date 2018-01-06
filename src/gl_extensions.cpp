@@ -1,6 +1,6 @@
 #include "gl_extensions.hpp"
 #include <be/core/logging.hpp>
-#include <be/platform/glfw.hpp>
+#include <glfw/glfw3.h>
 #include <be/gfx/bgl.hpp>
 
 using namespace be;

@@ -1,6 +1,6 @@
 #include "monitor_info.hpp"
 #include <be/core/logging.hpp>
-#include BE_NATIVE(platform, glfw.hpp)
+#include <glfw/glfw3.h>
 #include <glm/vec2.hpp>
 #include <glm/vec3.hpp>
 #include <iomanip>
